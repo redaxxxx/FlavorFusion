@@ -4,7 +4,9 @@
     <color name="white">#FFFFFFFF</color>
     <color name="green">#129575</color>
     <color name="gray">#A9A9A9</color>
+    <color name="dark_gray">#484848</color>
 
     <color name="transparent">#00FFFFFF</color>
 
+    <color name="duskYellow">#ffc922</color>
 </resources>

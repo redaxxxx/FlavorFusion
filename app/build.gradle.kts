@@ -49,7 +49,11 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 
+    //blur image
     implementation ("jp.wasabeef:blurry:4.0.1")
+
+    //circular image
+    implementation ("de.hdodenhof:circleimageview:3.1.0")
 
     //Navigation component
     implementation ("androidx.navigation:navigation-fragment-ktx:2.4.1")
@@ -59,5 +63,16 @@ dependencies {
 
     //viewPager
     implementation ("androidx.viewpager:viewpager:1.0.0")
+
+    // Moshi
+    implementation ("com.squareup.moshi:moshi:1.9.3")
+    implementation ("com.squareup.moshi:moshi-kotlin:1.9.3")
+
+    implementation ("com.squareup.retrofit2:converter-moshi:2.9.0")
+
+    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
+
+    implementation ("com.github.bumptech.glide:glide:4.8.0")
+
 
 }

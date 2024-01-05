@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+<androidx.cardview.widget.CardView
+    android:layout_width="150dp"
+    android:layout_height="230dp">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="150dp"
+            android:layout_height="180dp"
+            android:layout_gravity="bottom"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="3dp"
+            app:cardUseCompatPadding="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/recipeName_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Classic Greek Salad"
+                    android:layout_marginTop="48dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="18sp"
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/recipeType_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="@id/recipeName_tv"
+                    app:layout_constraintTop_toBottomOf="@id/recipeName_tv"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:text="Salad"
+                    android:textSize="16sp"
+                    android:textColor="@color/gray"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/inactive_icon"
+                    app:layout_constraintEnd_toEndOf="@id/recipeName_tv"
+                    app:layout_constraintTop_toTopOf="@id/recipeType_tv"
+                    android:elevation="3dp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/recipeImg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/avatar_img"
+        android:layout_gravity="center_horizontal"
+        app:layout_anchor="@id/cardView"
+        android:scaleType="centerCrop"/>
+
+</androidx.cardview.widget.CardView>
+
+</layout>

@@ -14,31 +14,6 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         val binding = DataBindingUtil.setContentView<ActivityHomeBinding>(this, R.layout.activity_home)
 
-        binding.navBar.setOnItemSelectedListener(object: NavigationBarView.OnItemSelectedListener {
-            override fun onNavigationItemSelected(item: MenuItem): Boolean {
-                return when(item.itemId){
-                    R.id.homeFragment ->{
-                        R.drawable.home_ic_green
-                        true
-                    }
-                    R.id.favoriteFragment-> {
-                        R.drawable.inactive_ic_green
-                        true
-                    }
-                    R.id.notificationFragment-> {
-                        R.drawable.notification_icon
-                        true
-                    }
-                    R.id.profileFragment-> {
-                        R.drawable.profile_icon
-                        true
-                    }
-                    else -> false
-                }
-
-            }
-
-        })
         val navController by lazy {
             val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host) as NavHostFragment
             navHostFragment.navController
